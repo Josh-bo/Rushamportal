@@ -1,6 +1,45 @@
 .head-top{
     background-color: #F9EEED;
 }
-.navbar-nav{
-    margin-left: 500px;
+.HeroSection{
+    background-color: #F9EEED;
+    /* height: 40rem; */
+}
+.bestline{
+    font-size: 80px;
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif;
+}
+.wedo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.ido{
+    font-size: 23px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.link{
+    font-size: 15px;
+    font-weight: 500;
+}
+.join{
+    font-size: 35px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid #AB2923;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 20px;
+}
+.milli{
+    color: #AB2923;
+}
+.cardbg{
+    background-color: #F9FAFB;
+    width: 25rem !important;
+}
+.title{
+    color: #AB2923;
 }
