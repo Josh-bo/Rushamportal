@@ -1,5 +1,6 @@
 .head-top{
     background-color: #F9EEED;
+    height: 5rem;
 }
 .HeroSection{
     background-color: #F9EEED;
@@ -42,4 +43,14 @@
 }
 .title{
     color: #AB2923;
+}
+.why{
+    font-size: 23px;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.to-make{
+    font-size: 26px;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
