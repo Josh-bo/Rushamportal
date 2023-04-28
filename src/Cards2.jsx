@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Cards2 = () => {
-    // const time = require('../assets/time.PNG').default;
   return (
     <>
       {/* Card 2 */}
