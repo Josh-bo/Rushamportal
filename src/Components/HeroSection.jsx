@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className='HeroSection'>
             <div className='container-fluid ps-5'>
                 <div className='HeroText row'>
-                    <div className='col-sm-3 col-md-6 col-lg-6 pt-6'>
+                    <div className='col-sm-12 col-md-12 col-lg-6 pt-6'>
                         <div className='mt-5 pt-5'>
                             <b className='bestline'>The best way to <br /> <span className='text-danger'>make your online</span> transaction</b>
                             <p className='wedo'>Buy data and airtime, no delay, Convert airtime to cash, make bills payments to either GoTv, DsTv, starTimes e.t.c. 
@@ -78,17 +78,17 @@ const HeroSection = () => {
                         </svg></span>
 
                         <span className='ms-3 ido'>New to Airtime to cash? <span className='link'><a href="" className='text-danger'>see how it works</a></span></span>
-                        </div>
-
                         <div className=' mt-4'>
                           <a href="">
-                            <button className='btn btn-outline-success mx-1 w-25'>LOGIN</button>
+                            <button className='btn btn-outline-success mx-1'>LOGIN</button>
                           </a>
 
                           <a href="">
-                            <button className='btn btn-outline-danger mx-1 w-25'>Create account</button>
+                            <button className='btn btn-outline-danger mx-1'>Create account</button>
                           </a>
                         </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

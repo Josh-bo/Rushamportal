@@ -1,9 +1,9 @@
 .head-top{
-    background-color: #F9EEED;
+    /* background-color:; */
     height: 5rem;
 }
 .HeroSection{
-    background-color: #F9EEED;
+    /* background-color: #F9EEED; */
     /* height: 40rem; */
 }
 .bestline{
@@ -13,14 +13,17 @@
 }
 .wedo{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 
-    20px;
+    font-size:20px;
 }
-.bak{
-    background-color: #F9EEED;
+.menu{
+    height: 3rem;
+}
+.bar{
+    position: relative;
+    top: -60px;
 }
 .ido{
-    font-size: 23px;
+    /* font-size: 23px; */
     font-weight: 500;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
