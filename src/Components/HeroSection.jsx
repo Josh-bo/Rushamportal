@@ -96,7 +96,7 @@ const HeroSection = () => {
 
       {/* JOIN SIDE */}
 
-    <div className='container'>
+    <div className='container p-3'>
       <div className='row'>
         <div className='text-center w-100 mx-auto mt-5 pt-3 join'>
                 Join <span className='milli'>Millions</span>  <br /> of people who use Rusham.
