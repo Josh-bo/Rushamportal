@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar'
 import HeroSection from './Components/HeroSection'
 import Firstcard from './Components/Firstcard'
 import Cards2 from './Cards2'
+import Footers from './Footers'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <HeroSection/>
       <Firstcard/>
       <Cards2/>
+      <Footers/>
     </>
   )
 }

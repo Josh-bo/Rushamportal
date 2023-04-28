@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 const Navbar = () => {
   return (
     <>
-
+      
     </>
   );
 }
