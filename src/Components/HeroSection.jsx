@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className='HeroSection'>
             <div className='container-fluid ps-5'>
                 <div className='HeroText row'>
-                    <div className='col-sm-12 col-md-6 col-lg-6 pt-6'>
+                    <div className='col-sm-3 col-md-6 col-lg-6 pt-6'>
                         <div className='mt-5 pt-5'>
                             <b className='bestline'>The best way to <br /> <span className='text-danger'>make your online</span> transaction</b>
                             <p className='wedo'>Buy data and airtime, no delay, Convert airtime to cash, make bills payments to either GoTv, DsTv, starTimes e.t.c. 
