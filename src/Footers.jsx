@@ -30,6 +30,7 @@ const Footers = () => {
                     <p className='mt-3'><a href="" className='nav-link links'>API Reference</a></p>
                     <p className='mt-2'><a href="" className='nav-link links'>Documentation</a></p>
                     <p className='mt-2'><a href="" className='nav-link links'>Libraries</a></p>
+                    <p className='mt-2'><a href="" className='nav-link links'>Libraries</a></p>
                     <p className='mt-2 '><a href="" className='nav-link links'></a></p>
                     <hr />
                 </div>
