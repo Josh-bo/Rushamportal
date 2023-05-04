@@ -5,7 +5,7 @@ import rush from '../assets/rushlogo.png'
 const TopNav = () => {
   return (
     <>
-    <div className='sticky-top bg-light rush mb-4'>
+    <div className='sticky-top bg-light rush'>
       <div className='text-center'>
           <div class="dropdown">
             <div className='' type="button" data-bs-toggle="dropdown" aria-expanded="false">
