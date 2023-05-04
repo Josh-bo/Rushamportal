@@ -1,6 +1,6 @@
 import React from 'react';
-import rush from '../assets/rushlogo.PNG'
-// import sup from '../assets/sup.PNG'
+// import rush from '../assets/rushlogo.PNG'
+import sup from '../assets/sup.PNG'
 
 const TopNav = () => {
   return (
@@ -9,7 +9,7 @@ const TopNav = () => {
       <div className='text-center'>
           <div class="dropdown">
             <div className='' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src={rush} alt="" width={"300px"} />
+              <img src={sup} alt="" width={"300px"} />
             </div>
     
       <ul class="dropdown-menu down text-center w-100 bg-">
