@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Navbar from './Components/Navbar'
+import TopNav from './TopNav'
 import HeroSection from './Components/HeroSection'
 import Firstcard from './Components/Firstcard'
 import Cards2 from './Cards2'
@@ -12,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Navbar/>
+      <TopNav/>
       <HeroSection/>
       <Firstcard/>
       <Cards2/>
