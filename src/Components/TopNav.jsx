@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/Capture-removebg-preview (1).PNG'
+import logo from './assets/Capture-removebg-preview (1).PNG'
 
 
 const TopNav = () => {
