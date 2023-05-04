@@ -5,14 +5,14 @@ import rush from '../assets/rushlogo.png'
 const TopNav = () => {
   return (
     <>
-    <div className=''>
+    <div className='sticky-top bg-light rush mb-4'>
       <div className='text-center'>
           <div class="dropdown">
             <div className='' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src={rush} alt="" width={"300px"} />
+              <img className='rus' src={rush} alt="" width={"300px"} />
             </div>
     
-      <ul class="dropdown-menu down text-center w-100 bg-">
+      <ul class="dropdown-menu down text-center w-100 bg-light">
         <li><a class="dropdown-item" href="#">Home</a></li>
         <li><a class="dropdown-item" href="#">About</a></li>
         <li><a class="dropdown-item" href="#">Contact</a></li>
