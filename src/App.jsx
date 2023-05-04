@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import TopNav from './TopNav'
+import TopNav from './Components/TopNav'
 import HeroSection from './Components/HeroSection'
 import Firstcard from './Components/Firstcard'
-import Cards2 from './Cards2'
-import Footers from './Footers'
+import Cards2 from './Components/Cards2'
+import Footers from './Components/Footers'
 
 function App() {
   const [count, setCount] = useState(0)

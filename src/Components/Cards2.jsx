@@ -1,8 +1,8 @@
 import React from 'react';
-import image from './assets/time.PNG'
-import secure from './assets/security.PNG'
-import same from './assets/same.PNG'
-import sup from './assets/sup.PNG'
+import image from '../assets/time.PNG'
+import secure from '../assets/security.PNG'
+import same from '../assets/same.PNG'
+import sup from '../assets/sup.PNG'
 
 const Cards2 = () => {
   return (

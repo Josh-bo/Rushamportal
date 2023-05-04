@@ -1,5 +1,4 @@
 import React from 'react';
-// import transactionimg from '../assets/images.jpeg'
 
 
 const HeroSection = () => {
@@ -9,7 +8,7 @@ const HeroSection = () => {
             <div className='container-fluid ps-5'>
                 <div className='HeroText row'>
                     <div className='col-sm-12 col-md-12 col-lg-6'>
-                        <div className='mt-5 pt-5'>
+                        <div className=''>
                             <b className='bestline'>The best way to <br /> <span className='text-danger'>make your online</span> transaction</b>
                             <p className='wedo'>Buy data and airtime, no delay, Convert airtime to cash, make bills payments to either GoTv, DsTv, starTimes e.t.c. 
                              </p>
@@ -17,7 +16,7 @@ const HeroSection = () => {
                     </div>
 
                     <div className='col-sm-12 col-md-6 col-lg-6 ps-5'>
-                        <div className='mt-5 pt-5'>
+                        <div className=''>
                           <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-danger" viewBox="0 0 16 16">
                           <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
                           <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
