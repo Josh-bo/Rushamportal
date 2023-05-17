@@ -1,20 +1,37 @@
-import { useState } from 'react'
-import TopNav from './Components/TopNav'
-import HeroSection from './Components/HeroSection'
-import Firstcard from './Components/Firstcard'
-import Cards2 from './Components/Cards2'
-import Footers from './Components/Footers'
+// import { useState } from 'react'
+import {Route, Routes} from 'react-router-dom'
+import Login from './Components/Login'
+import { useEffect } from 'react'
+import Homepage from './Components/Homepage'
+import SignUp from './Components/signUp';
 
+// const [count, setCount] = useState(0)
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    if('serviceWorker' in navigator){
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('SW registered: ', registration);
+        })
+        .catch(registrationError =>{
+          console.log('SW registration failed: ', registrationError);
+        })
+      })
+    }
+ }, []);
 
   return (
     <>
-      <TopNav/>
-      <HeroSection/>
-      <Firstcard/>
-      <Cards2/>
-      <Footers/>
+      <Routes>
+        <Route path='/' element={<Homepage/>} />
+        {/* <Route path="/home" element={<Navigate to='/'/>} /> */}
+        {/* <Route path="/about" element={<About/>} /> */}
+        {/* <Route path="/contact" element={<Contact/>} /> */}
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signUp" element={<SignUp/>} />
+        {/* <Route path="/login" element={</>} /> */}
+      </Routes>
     </>
   )
 }
