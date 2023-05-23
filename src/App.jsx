@@ -25,11 +25,12 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Homepage/>} />
-        <Route path="/home" element={<Navigate to='/'/>} />
+        {/* <Route path="/home" element={<Navigate to='/'/>} /> */}
         {/* <Route path="/about" element={<About/>} /> */}
         {/* <Route path="/contact" element={<Contact/>} /> */}
         <Route path="/login" element={<Login/>} />
         <Route path="/create" element={<Create/>} />
+        {/* <Route path="/login" element={</>} /> */}
       </Routes>
     </>
   )

@@ -8,7 +8,7 @@ const Create = () => {
       <TopNav />
       <div className="container mt-5 pt-2">
         <div className="row">
-          <div className="col-12 mx-auto text-center w-25 border rounded p-2">
+          <div className="col-12 mx-auto text-center w-50 border rounded p-2">
             <h4 className="text-info fs-3">CREATE ACCOUNT</h4>
             <hr />
             <form action="#" method="post">
