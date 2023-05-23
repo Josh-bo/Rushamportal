@@ -48,7 +48,7 @@ const Footers = () => {
 
 
       {/* Last Footer */}
-      <section className='mb-3'>
+      <section>
           <div className='container-fluid'>
               <div className='text-center p-4'>
                   <div className='last p-4'>&copy;2023 . Rusham Technology Ltd.</div>

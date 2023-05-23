@@ -4,6 +4,7 @@ import Login from './Components/Login'
 import { useEffect } from 'react'
 import Homepage from './Components/Homepage'
 import SignUp from './Components/signUp';
+import Create from './Components/Create';
 
 // const [count, setCount] = useState(0)
 function App() {
@@ -30,6 +31,7 @@ function App() {
         {/* <Route path="/contact" element={<Contact/>} /> */}
         <Route path="/login" element={<Login/>} />
         <Route path="/signUp" element={<SignUp/>} />
+        <Route path="/create" element={<Create/>} />
         {/* <Route path="/login" element={</>} /> */}
       </Routes>
     </>
