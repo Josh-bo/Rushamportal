@@ -3,7 +3,7 @@ import {Route, Routes} from 'react-router-dom';
 import Login from './Components/Login';
 import { useEffect } from 'react';
 import Homepage from './Components/Homepage';
-import Create from './Components/Create' ;
+import Create from './Components/Create';
 
 // const [count, setCount] = useState(0)
 function App() {
@@ -25,12 +25,11 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Homepage/>} />
-        {/* <Route path="/home" element={<Navigate to='/'/>} /> */}
+        <Route path="/home" element={<Navigate to='/'/>} />
         {/* <Route path="/about" element={<About/>} /> */}
         {/* <Route path="/contact" element={<Contact/>} /> */}
         <Route path="/login" element={<Login/>} />
         <Route path="/create" element={<Create/>} />
-        {/* <Route path="/login" element={</>} /> */}
       </Routes>
     </>
   )
