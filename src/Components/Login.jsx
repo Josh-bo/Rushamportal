@@ -8,7 +8,7 @@ const Login = () => {
       <TopNav />
       <div className="container mt-5 pt-2">
         <div className="row">
-          <div className="col-12 mx-auto text-center w-25 border rounded p-2">
+          <div className="col-12 mx-auto text-center w-75 border rounded p-2">
             <h4 className="text-primary">LOGIN</h4>
             <hr />
             <form action="#" method="post">
