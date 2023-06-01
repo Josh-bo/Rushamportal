@@ -13,7 +13,7 @@ const Dashboard = () => {
             </div>
 
             <div className='mt-3 text-light text-center mx-auto'>
-              <b>Welcome</b>
+              <b className='me-5 pe-5'>Welcome</b>
             </div>
             
           </nav>
