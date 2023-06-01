@@ -77,3 +77,11 @@
 .rus{
     margin-top: -17px;
 }
+.nav-bg{
+    background-color: #b1312a;
+}
+.p1{
+    background-color: white;
+    width: 30px !important;
+    height: 5px !important;
+}
