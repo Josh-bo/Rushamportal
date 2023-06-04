@@ -27,7 +27,7 @@ const Dashboard = () => {
               </div>
 
               <div className='col-6 mt-1 mx-auto text-center'>
-                <p><b className='fs-5 balance'>Total Transactions</b> <br /><b>0</b></p>
+                <p><b className='fs-5 balance'>All Transactions</b> <br /><b>0</b></p>
               </div>
             </div>
           </div>
