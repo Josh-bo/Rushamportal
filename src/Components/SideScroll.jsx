@@ -22,8 +22,22 @@ const SideScroll = () => {
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                    <div class="offcanvas-body p-0 text-light">
+                        <div className='mt-3'>
+                            <div className='balD p-2'>
+                                <div className='mx-auto text-center pt-4 pb-3'>
+                                    <span className='balance'>BALANCE</span> <br />
+                                    <span>₦ 3,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Remaining Actions */}
+                <div>
+                    <div className=''>
+                        <div></div>
                     </div>
                 </div>
             </div>

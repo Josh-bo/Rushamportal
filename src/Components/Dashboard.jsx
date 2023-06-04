@@ -22,12 +22,12 @@ const Dashboard = () => {
         <div className='p-2'>
           <div className='container-fluid nav-bg mt-2 text-light rounded'>
             <div className='row'>
-              <div className='col-6 mt-1 auto text-center'>
-                <p><b className='fs-5 balance'>CURRENT BALANCE :</b> ₦ <b>3,000</b></p>
+              <div className='col-6 mt-1 mx-auto text-center'>
+                <p><b className='fs-5 balance'>CURRENT BALANCE :</b> <br /> ₦ <b>3,000</b></p>
               </div>
 
-              <div className='col-6 mt-1 auto text-center'>
-                <p><b className='fs-5 balance'>PREVIOUS BALANCE :</b> ₦ <b>2,300</b></p>
+              <div className='col-6 mt-1 mx-auto text-center'>
+                <p><b className='fs-5 balance'>PREVIOUS BALANCE :</b> <br /> ₦ <b>2,300</b></p>
               </div>
             </div>
           </div>
