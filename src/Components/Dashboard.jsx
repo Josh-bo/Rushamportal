@@ -19,10 +19,18 @@ const Dashboard = () => {
             
           </nav>
 
-          <div className='container-fluid'>
-              <div className='balD mt-3 rounded-2 p-3 text-light'>
-                <p>BALANCE</p>  
+        <div className='p-2'>
+          <div className='container-fluid nav-bg mt-2 text-light rounded'>
+            <div className='row'>
+              <div className='col-6 mt-1 auto text-center'>
+                <p><b className='fs-5 balance'>CURRENT BALANCE :</b> ₦ <b>3,000</b></p>
               </div>
+
+              <div className='col-6 mt-1 auto text-center'>
+                <p><b className='fs-5 balance'>PREVIOUS BALANCE :</b> ₦ <b>2,300</b></p>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </>

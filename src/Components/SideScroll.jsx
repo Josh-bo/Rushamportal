@@ -15,7 +15,7 @@ const SideScroll = () => {
 
                 </div>
 
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start w-75" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header text-center nav-bg">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             <img src={rush} alt=""  width={"140%"}  height={"37px"}/>
