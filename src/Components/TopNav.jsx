@@ -19,13 +19,13 @@ const TopNav = () => {
 
             <ul className="dropdown-menu down text-center w-100 bg-light">
               <li className="nav-item mt-2">
-                <Link to="/" className="nav-link active" aria-current="page">
+                <Link to="/home" className="nav-link active" aria-current="page">
                   Home
                 </Link>
               </li>
 
               <li className="nav-item mt-2">
-                <Link to="/dash" className="nav-link">
+                <Link to="" className="nav-link">
                   About
                 </Link>
               </li>
@@ -33,6 +33,12 @@ const TopNav = () => {
               <li className="nav-item mt-2">
                 <Link to="Contact" className="nav-link">
                   Contact
+                </Link>
+              </li>
+
+              <li className="nav-item mt-2">
+                <Link to="/dash" className="nav-link">
+                  Dashboard
                 </Link>
               </li>
 
