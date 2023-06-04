@@ -23,11 +23,11 @@ const Dashboard = () => {
           <div className='container-fluid nav-bg mt-2 text-light rounded'>
             <div className='row'>
               <div className='col-6 mt-1 mx-auto text-center'>
-                <p><b className='fs-5 balance'>Wallet Balance :</b> <br /> ₦ <b>3,000</b></p>
+                <p><b className='fs-5 balance'>Wallet Balance</b> <br /> ₦ <b>3,000</b></p>
               </div>
 
               <div className='col-6 mt-1 mx-auto text-center'>
-                <p><b className='fs-5 balance'>Total Transactions :</b> <br /> ₦ <b>0</b></p>
+                <p><b className='fs-5 balance'>Total Transactions</b> <br /><b>0</b></p>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Dashboard = () => {
         </div>
         {/* Line in between */}
           <div className=''>
-            <div className='p-2' style={{background:"#C4C6C9"}}>
+            <div className='p-2 pb-5 pt-5' style={{background:"#C4C6C9"}}>
               <div className='container text-center'>
                 <p className='What text-start'>What will you like to do</p>
                 <div className='row'>
