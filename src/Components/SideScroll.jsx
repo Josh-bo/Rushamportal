@@ -25,7 +25,7 @@ const SideScroll = () => {
                     <div class="offcanvas-body p-0 text-light">
                         <div className='mt-3'>
                             <div className='balD p-2'>
-                                <div className='mx-auto text-center pt-4 pb-3'>
+                                <div className='mx-auto text-center pt-1 pb-1'>
                                     <span className='balance'>BALANCE</span> <br />
                                     <span>₦ 3,000</span>
                                 </div>
