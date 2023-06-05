@@ -1,5 +1,6 @@
 import React from 'react';
 import SideScroll from './SideScroll';
+import TransactionHistory from './TransactionHistory';
 
 const Dashboard = () => {
   return (
@@ -23,11 +24,11 @@ const Dashboard = () => {
           <div className='container-fluid nav-bg mt-2 text-light rounded'>
             <div className='row'>
               <div className='col-6 mt-1 mx-auto text-center'>
-                <p><b className='fs-5 balance'>Wallet Balance</b> <br /> ₦ <b>3,000</b></p>
+                <p><b className='fs-5 balance'>Wallet</b> <br /> ₦ <b>3,000</b></p>
               </div>
 
               <div className='col-6 mt-1 mx-auto text-center'>
-                <p><b className='fs-5 balance'>Transactions</b> <br /><b>0</b></p>
+                <p><b className='fs-5 balance'>Deals</b> <br /><b>0</b></p>
               </div>
             </div>
           </div>
@@ -55,13 +56,13 @@ const Dashboard = () => {
                       <div className='col-6 mt-2'>
                         <div className='bg-light zon rounded-2 text-danger p-1 pt-2'>
                           <span className='card-title'>Airtime To Cash</span><br />
-                          <span className='text-dark card-text'>Instant convert your airtime to cash </span>
+                          <span className='text-dark card-text'>Instant convert your airtime to cash at a cheaper rate.</span>
                         </div>
                       </div>
                       <div className='col-6 mt-2'>
-                        <div className='bg-light rounded-2 text-danger p-1 pt-2'>
-                          <span className='card-title'>Airtime To Cash</span><br />
-                          <span className='text-dark card-text'>Instant convert your airtime to cash </span>
+                        <div className='bg-light zon rounded-2 text-danger p-1 pt-2'>
+                          <span className='card-title'>Data TopUp</span><br />
+                          <span className='text-dark card-text'>Buy data at the cheaper rates, available on all networks </span>
                         </div>
                       </div>
                     </div>
@@ -70,15 +71,15 @@ const Dashboard = () => {
                   <div className='col-sm-12 col-md-6 col-lg-4'>
                     <div className='row'>
                       <div className='col-6 mt-2'>
-                        <div className='bg-light rounded-2 text-danger p-1 pt-2'>
-                          <span className='card-title'>Airtime To Cash</span><br />
-                          <span className='text-dark card-text'>Instant convert your airtime to cash </span>
+                        <div className='bg-light zon rounded-2 text-danger p-1 pt-2'>
+                          <span className='card-title'>Airtime TopUp</span><br />
+                          <span className='text-dark card-text'>Buy airtime for networks at cheaper rates and lasting one.</span>
                         </div>
                       </div>
                       <div className='col-6 mt-2'>
-                        <div className='bg-light rounded-2 text-danger p-1 pt-2'>
-                          <span className='card-title'>Airtime To Cash</span><br />
-                          <span className='text-dark card-text'>Instant convert your airtime to cash </span>
+                        <div className='bg-light zon rounded-2 text-danger p-1 pt-2'>
+                          <span className='card-title'>Pay Bills</span><br />
+                          <span className='text-dark card-text pt-3'>Make bills payment with no service fee at a better time .</span>
                         </div>
                       </div>
                     </div>
@@ -87,15 +88,15 @@ const Dashboard = () => {
                   <div className='col-sm-12 col-md-6 col-lg-4'>
                     <div className='row'>
                       <div className='col-6 mt-2'>
-                        <div className='bg-light rounded-2 text-danger p-1 pt-2'>
-                          <span className='card-title'>Airtime To Cash</span><br />
-                          <span className='text-dark card-text'>Instant convert your airtime to cash </span>
+                        <div className='bg-light zon rounded-2 text-danger p-1 pt-2'>
+                          <span className='card-title'>Make Money (Referral)</span><br />
+                          <span className='text-dark card-text'>Refer your family and friends and earn.</span>
                         </div>
                       </div>
                       <div className='col-6 mt-2'>
-                        <div className='bg-light rounded-2 text-danger p-1 pt-2'>
-                          <span className='card-title'>Airtime To Cash</span><br />
-                          <span className='text-dark card-text'>Instant convert your airtime to cash </span>
+                        <div className='bg-light zon rounded-2 text-danger p-1 pt-2'>
+                          <span className='card-title'>Channels Subscription</span><br />
+                          <span className='text-dark card-text'>Instant convert your airtime to cash.</span>
                         </div>
                       </div>
                     </div>
@@ -104,13 +105,8 @@ const Dashboard = () => {
 
 
 
-                  {/* <div className='col-3 bg-light rounded mx-auto text-center' style={{width:"160px"}}>
-                    <div>
-                      <p>Airtime to Cash</p>
-                      <p>Airtime to Cash</p>
-                      <p>Airtime to Cash</p>
-                    </div>
-                  </div> */}
+               {/* Transaction Section */}
+               <TransactionHistory/>
                 </div>
               </div>
             </div>
