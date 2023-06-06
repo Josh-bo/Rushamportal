@@ -35,10 +35,10 @@ const BuyData = () => {
                     <div className="">
                         <div className="row">
                             <div
-                                className="col-sm-4 col-md-6 col-lg-3 mx-auto text-center shadow-lg bg-danger text-light p-4 rounded-3"
+                                className="col-sm-4 col-md-6 col-lg-3 mx-auto text-center shadow-lg bg-danger text-light pt-4 rounded-3"
                                 style={{ width: "80px" }}
                             >
-                                <div>Airtel</div>
+                                <div>AIRTEL</div>
                             </div>
 
                             <div
