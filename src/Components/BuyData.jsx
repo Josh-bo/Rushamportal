@@ -24,6 +24,7 @@ const BuyData = () => {
                             className='form-control text-center'
                             inputMode="tel"
                             pattern="tel:*"
+                            placeholder="Enter number"
                         />
                         <button className="btn mt-4 w-100 card-color text-light">
                             SUBMIT
