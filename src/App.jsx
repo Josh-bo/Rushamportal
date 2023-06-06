@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import Homepage from './Components/Homepage';
 import Create from './Components/Create';
 import Dashboard from './Components/Dashboard';
+import BuyData from './Components/BuyData';
 
 // const [count, setCount] = useState(0)
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/create" element={<Create/>} />
         <Route path="/dash" element={<Dashboard/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/buydata" element={<BuyData/>} />
         {/* <Route path="/login" element={</>} /> */}
       </Routes>
     </>

@@ -112,7 +112,7 @@
     top: -13rem;
 }
 .card-text{
-    color: #b1312a;
+    color: #b1312a !important;
 }
 .card-color{
     background-color: #b1312a !important;
@@ -122,5 +122,8 @@
     margin-top: 3rem;
 }
 .scroll-bg{
+    background-color: #b1312a;
+}
+.dataBar{
     background-color: #b1312a;
 }
