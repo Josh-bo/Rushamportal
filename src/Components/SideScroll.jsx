@@ -17,14 +17,14 @@ const SideScroll = () => {
                 </div>
 
                 <div class="offcanvas offcanvas-start w-75" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header text-center nav-bg">
+                    <div class="offcanvas-header text-center scroll-bg">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             <img src={rush} alt="" width={"140%"} height={"37px"} />
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body p-0 text-light">
-                        <div className='mt-3'>
+                        <div className='mt-1'>
                             <div className='balD p-2'>
                                 <div className='mx-auto text-center pt-1 pb-1'>
                                     <span className='balance'>BALANCE</span> <br />

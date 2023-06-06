@@ -79,6 +79,8 @@
 }
 .nav-bg{
     background-color: #b1312a;
+    border-radius: 0 0 13px 13px;
+    height: 20rem;
 }
 .p1{
     background-color: white;
@@ -104,4 +106,21 @@
 }
 .card-text{
    font-size: 14px; 
+}
+.card-bg{
+    position: relative;
+    top: -13rem;
+}
+.card-text{
+    color: #b1312a;
+}
+.card-color{
+    background-color: #b1312a !important;
+
+}
+.card-bg{
+    margin-top: 3rem;
+}
+.scroll-bg{
+    background-color: #b1312a;
 }
