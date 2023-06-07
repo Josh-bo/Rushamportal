@@ -127,3 +127,25 @@
 .dataBar{
     background-color: #b1312a;
 }
+.italic-line{
+    background-color: rgb(43, 43, 43);
+    height: 2px;
+}
+.but{
+    border: 1px solid #b1312a;
+    border-radius: 9px;
+    width: 40px;
+    background-color:#b1312a;
+}
+.gifting{
+    width: 73px;
+}
+.sme{
+    width: 46px;
+}
+.sme2{
+    width: 66px;
+}
+.smeCenter{
+    background-color:#b1312a !important;
+}

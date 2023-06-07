@@ -6,6 +6,7 @@ import Homepage from './Components/Homepage';
 import Create from './Components/Create';
 import Dashboard from './Components/Dashboard';
 import BuyData from './Components/BuyData';
+import MTNPlans from './Components/MTNPlans';
 
 // const [count, setCount] = useState(0)
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/dash" element={<Dashboard/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/buydata" element={<BuyData/>} />
+        <Route path="/MTN" element={<MTNPlans/>} />
         {/* <Route path="/login" element={</>} /> */}
       </Routes>
     </>
