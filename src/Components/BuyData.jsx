@@ -2,7 +2,7 @@ import React from "react";
 import SideScroll from "./SideScroll";
 
 const BuyData = () => {
-    return (
+     return (
         <>
             <div>
                 <nav className="dataBar p-2 d-flex">
