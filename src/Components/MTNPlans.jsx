@@ -7,7 +7,7 @@ const MTNPlans = () => {
         <div className='balD text-light p-3 fs-5 mx-auto text-center '>MTN DATA PLAN</div>
 
       <div className='container mt-1'>
-        <small><b>Select Type</b></small>
+        <small>Select Type</small>
         <div className='italic-line w-100'></div>
       </div>
 
@@ -27,17 +27,17 @@ const MTNPlans = () => {
 
         {/* Plans GB */}
           <div className='mx-auto text-center p-3'>
-            <button className='btn smeCenter p-2 text-light mt-1'><b>MTN SME 0.5GB - 30 days - ₦109</b></button><br />
+            <button className='btn smeCenter p-2 text-light mt-1'>MTN SME 0.5GB - 30 days - ₦109</button><br />
 
-            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 1.0GB - 30 days - ₦216</b></button><br />
+            <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 1.0GB - 30 days - ₦216</button><br />
 
-            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 2.0GB - 30 days - ₦432</b></button><br />
+            <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 2.0GB - 30 days - ₦432</button><br />
 
-            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 3.0GB - 30 days - ₦648</b></button><br />
+            <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 3.0GB - 30 days - ₦648</button><br />
 
-            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 5.0GB - 30 days - ₦1080</b></button><br />
+            <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 5.0GB - 30 days - ₦1080</button><br />
 
-            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 10.0GB - 30 days - ₦2160</b></button>
+            <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 10.0GB - 30 days - ₦2160</button>
           </div>
         </div>
       </div>
