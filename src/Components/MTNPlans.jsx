@@ -17,7 +17,7 @@ const MTNPlans = () => {
             <div className='mx-auto text-center p-2'>
               <button className='but bg-light mx-2'>All</button>
               <button className='but bg-light mx-2 sme'>SME</button>
-              <button className='but bg-light mx-2'>CPT</button>
+              <button className='but bg-light mx-2 cpt'>CPT</button>
               <button className='but bg-light mx-2 gifting'>GIFTING</button>
             </div>
           </div>
