@@ -7,6 +7,7 @@ import Create from './Components/Create';
 import Dashboard from './Components/Dashboard';
 import BuyData from './Components/BuyData';
 import MTNPlans from './Components/MTNPlans';
+import AirtelPlans from './Components/AirtelPlans';
 
 // const [count, setCount] = useState(0)
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/buydata" element={<BuyData/>} />
         <Route path="/MTN" element={<MTNPlans/>} />
+        <Route path="/AIRTEL" element={<AirtelPlans/>} />
         <Route path="/Plan" element={<BuyData/>} />
         {/* <Route path="/login" element={</>} /> */}
       </Routes>

@@ -15,11 +15,11 @@ const MTNPlans = () => {
         <div>
           <div className='container'>
             <div className='mx-auto text-center p-2'>
-              <button className='but text-light mx-2'>All</button>
-              <button className='but text-light mx-2 sme'>SME</button>
-              <button className='but text-light mx-2 sme2'>SME 2</button>
-              <button className='but text-light mx-2'>CPT</button>
-              <button className='but text-light mx-2 gifting'>GIFTING</button>
+              <button className='but bg-light mx-2'>All</button>
+              <button className='but bg-light mx-2 sme'>SME</button>
+              <button className='but bg-light mx-2 sme2'>SME 2</button>
+              <button className='but bg-light mx-2'>CPT</button>
+              <button className='but bg-light mx-2 gifting'>GIFTING</button>
             </div>
           </div>
 
@@ -27,17 +27,17 @@ const MTNPlans = () => {
 
         {/* Plans GB */}
           <div className='mx-auto text-center p-3'>
-            <button className='btn smeCenter p-2 w-100 text-light mt-1'><b>MTN SME 0.5GB - 30 days - ₦109</b></button>
+            <button className='btn smeCenter p-2 text-light mt-1'><b>MTN SME 0.5GB - 30 days - ₦109</b></button><br />
 
-            <button className='btn smeCenter p-2 w-100 text-light mt-3'><b>MTN SME 1.0GB - 30 days - ₦216</b></button>
+            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 1.0GB - 30 days - ₦216</b></button><br />
 
-            <button className='btn smeCenter p-2 w-100 text-light mt-3'><b>MTN SME 2.0GB - 30 days - ₦432</b></button>
+            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 2.0GB - 30 days - ₦432</b></button><br />
 
-            <button className='btn smeCenter p-2 w-100 text-light mt-3'><b>MTN SME 3.0GB - 30 days - ₦648</b></button>
+            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 3.0GB - 30 days - ₦648</b></button><br />
 
-            <button className='btn smeCenter p-2 w-100 text-light mt-3'><b>MTN SME 5.0GB - 30 days - ₦1080</b></button>
+            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 5.0GB - 30 days - ₦1080</b></button><br />
 
-            <button className='btn smeCenter p-2 w-100 text-light mt-3'><b>MTN SME 10.0GB - 30 days - ₦2160</b></button>
+            <button className='btn smeCenter p-2 text-light mt-3'><b>MTN SME 10.0GB - 30 days - ₦2160</b></button>
           </div>
         </div>
       </div>

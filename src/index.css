@@ -135,7 +135,7 @@
     border: 1px solid #b1312a;
     border-radius: 9px;
     width: 40px;
-    background-color:#b1312a;
+    /* background-color:#b1312a; */
 }
 .gifting{
     width: 73px;
@@ -148,6 +148,7 @@
 }
 .smeCenter{
     background-color:#b1312a !important;
+    width: 30rem;
 }
 .side{
     width: 15rem !important;
