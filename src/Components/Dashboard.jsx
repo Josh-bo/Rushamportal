@@ -1,6 +1,6 @@
 import React from 'react';
-import SideScroll from './SideScroll';
 import TransactionHistory from './TransactionHistory';
+import SideBar from './SideBar';
 
 const Dashboard = () => {
   return (
@@ -10,7 +10,7 @@ const Dashboard = () => {
 
           <nav className='nav-bg p-2 d-flex'>
             <div>
-              <SideScroll/>
+              <SideBar/>
             </div>
 
             <div className='mt-3 text-light text-center mx-auto'>
