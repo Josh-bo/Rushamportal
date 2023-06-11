@@ -2,6 +2,9 @@ import React from "react";
 import SideScroll from "./SideScroll";
 
 const BuyData = () => {
+    const submitNumber = () => {
+        alert("Yes")
+    }
      return (
         <>
             <div>
@@ -26,7 +29,7 @@ const BuyData = () => {
                             pattern="tel:*"
                             placeholder="Enter number"
                         />
-                        <button className="btn mt-4 w-100 card-color text-light">
+                        <button onClick={submitNumber} className="btn mt-4 w-100 card-color text-light">
                             SUBMIT
                         </button>
                     </div>

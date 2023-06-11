@@ -17,7 +17,8 @@ const MTNPlans = () => {
             <div className='mx-auto text-center p-2'>
               <button className='but bg-light mx-2'>All</button>
               <button className='but bg-light mx-2 sme'>SME</button>
-              <button className='but bg-light mx-2 cpt'>CPT</button>
+              <button className='but bg-light mx-2 sme2'>SME 2</button>
+              <button className='but bg-light mx-2'>CPT</button>
               <button className='but bg-light mx-2 gifting'>GIFTING</button>
             </div>
           </div>
@@ -26,7 +27,8 @@ const MTNPlans = () => {
 
         {/* Plans GB */}
           <div className='mx-auto text-center p-3'>
-          
+            <button className='btn smeCenter p-2 text-light mt-1'>MTN SME 0.5GB - 30 days - ₦109</button><br />
+
             <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 1.0GB - 30 days - ₦216</button><br />
 
             <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 2.0GB - 30 days - ₦432</button><br />
