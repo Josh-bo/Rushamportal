@@ -84,7 +84,7 @@ const SideScroll = () => {
           </div>
           <a href="#">Contact</a>
         
-            {/* <div className="mx-3 mt-4">
+            <div className="mx-3 mt-4">
               <div className="text-dark">
                 <Link to="/home" className="nav-link">
                   <div className="mt-2">
@@ -241,7 +241,7 @@ const SideScroll = () => {
                     </button>
                     </div>
                     </div>
-                  </div> */}
+                  </div>
 
 
                   </div>
