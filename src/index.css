@@ -153,3 +153,11 @@
 .side{
     width: 15rem !important;
 }
+#animationElement {
+    position: absolute;
+    top: -100px; /* Initial position outside the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: top 1s ease, opacity 1s ease;
+  }

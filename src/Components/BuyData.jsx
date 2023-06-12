@@ -2,10 +2,79 @@ import React from "react";
 import SideScroll from "./SideScroll";
 
 const BuyData = () => {
+    
+    
+    
+    
     const submitNumber = () => {
-        alert("Yes")
+        // console.log(phoneNumber.value);
+        
+        fetch('http://localhost:2000/api/data')
+          .then(response => response.json())
+          .then(getData => {
+            // console.log(getData.MTN);// Verify the actual value of data
+      
+            if(getData == ""){
+                alert('Invalid')
+            }else{
+                // alert('Success')
+
+                fetch('http://localhost:2000/api/data')
+          .then(response => response.json())
+          .then(data => {
+                // console.log(data.MTN);
+                let MTN = data.MTN
+                console.log(MTN);
+
+                MTN.find((item, i) => {
+                    // console.log(item.Number);
+
+
+                    if(phoneNumber.value === item.Number){
+                        alert("phoneNumber is correct")
+                        Swal.fire({
+                            title: 'The network is MTN',
+                            showClass: {
+                              popup: 'animate__animated animate__fadeInDown'
+                            },
+                            hideClass: {
+                              popup: 'animate__animated animate__fadeOutUp'
+                            }
+                          })
+                    }else{
+                        // alert("phoneNumber is Incorrect")
+                    }
+                })
+          })
+            }
+
+            
+        //       data.map((item, i) => {
+        //         // dis.innerHTML = `${item}`;
+        //     dis.innerHTML += `${item}<br>`;
+        //   })
+
+
+            // <------- MTN SETUP ------>
+
+            // MTN.find((item, i) => {
+            // console.log(item);
+            // // ...
+
+            //     if(String(phoneNumber.value) === item.Number){
+            //         console.log("yes");
+            //     }else{
+            //         console.log("No");
+            //     }
+
+        
+            //   });
+          })
+          .catch(error => {
+            console.log('Error:', error);
+          });
     }
-     return (
+    return (
         <>
             <div>
                 <nav className="dataBar p-2 d-flex">
@@ -61,6 +130,9 @@ const BuyData = () => {
                         </div>
                     </div>
                 </section>
+
+
+                <div id="dis"></div>
             </div>
         </>
     );
