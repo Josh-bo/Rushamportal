@@ -7,73 +7,25 @@ const BuyData = () => {
     
     
     const submitNumber = () => {
-        // console.log(phoneNumber.value);
-        
-        fetch('http://localhost:2000/api/data')
-          .then(response => response.json())
-          .then(getData => {
-            // console.log(getData.MTN);// Verify the actual value of data
-      
-            if(getData == ""){
-                alert('Invalid')
-            }else{
-                // alert('Success')
-
-                fetch('http://localhost:2000/api/data')
-          .then(response => response.json())
-          .then(data => {
-                // console.log(data.MTN);
-                let MTN = data.MTN
-                console.log(MTN);
-
-                MTN.find((item, i) => {
-                    // console.log(item.Number);
-
-
-                    if(phoneNumber.value === item.Number){
-                        alert("phoneNumber is correct")
-                        Swal.fire({
-                            title: 'The network is MTN',
-                            showClass: {
-                              popup: 'animate__animated animate__fadeInDown'
-                            },
-                            hideClass: {
-                              popup: 'animate__animated animate__fadeOutUp'
-                            }
-                          })
-                    }else{
-                        // alert("phoneNumber is Incorrect")
-                    }
-                })
-          })
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        console.log(phoneNumber);
+    
+        // Rest of your code...
+    
+        // Example usage
+        verifyPhoneNumber(phoneNumber)
+          .then(network => {
+            if (network) {
+              console.log(`The network associated with the phone number is: ${network}`);
+            } else {
+              console.log('Failed to verify the phone number.');
             }
-
-            
-        //       data.map((item, i) => {
-        //         // dis.innerHTML = `${item}`;
-        //     dis.innerHTML += `${item}<br>`;
-        //   })
-
-
-            // <------- MTN SETUP ------>
-
-            // MTN.find((item, i) => {
-            // console.log(item);
-            // // ...
-
-            //     if(String(phoneNumber.value) === item.Number){
-            //         console.log("yes");
-            //     }else{
-            //         console.log("No");
-            //     }
-
-        
-            //   });
           })
           .catch(error => {
-            console.log('Error:', error);
+            console.error('Error:', error);
           });
-    }
+      };
+    
     return (
         <>
             <div>
