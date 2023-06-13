@@ -3,8 +3,12 @@ import rush from "../assets/rushlogo.png";
 import { Link } from "react-router-dom";
 
 const SideScroll = () => {
+  const BuyAirtime = () => {
+    alert("hI")
+  }
+
   return (
-    <>
+    <>  
       <div>
         <div
           class="btn border-0 "
@@ -66,7 +70,7 @@ const SideScroll = () => {
                   </div>
                 </Link>
 
-                <div className="mt-2">
+                <div className="mt-2" onClick={BuyAirtime}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
