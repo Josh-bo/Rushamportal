@@ -4,6 +4,7 @@ import Firstcard from './Firstcard';
 import Footers from './Footers';
 import HeroSection from './HeroSection';
 import TopNav from './TopNav';
+import ReturnToTop from './ReturnToTop';
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
         <Firstcard/>
         <Cards2/>
         <Footers/> 
+        <ReturnToTop/>
     </>
   );
 }

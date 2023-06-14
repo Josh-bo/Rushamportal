@@ -24,11 +24,11 @@ const TopNav = () => {
                 </Link>
               </li>
 
-              <li className="nav-item mt-2">
+              {/* <li className="nav-item mt-2">
                 <Link to="/Plan" className="nav-link">
                   About
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item mt-2">
                 <Link to="Contact" className="nav-link">

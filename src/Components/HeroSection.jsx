@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <>
-      <div className='HeroSection bg-light'>
+      <div className='HeroSection bg-light' id='Up'>
             <div className='container-fluid ps-5 pt-4 pb-4'>
                 <div className='HeroText row'>
                     <div className='col-sm-12 col-md-12 col-lg-6'>
