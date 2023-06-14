@@ -214,6 +214,7 @@
   width: 10rem;
   padding: 10px;
   border: 1px solid #ddd;
+  z-index: 2;
 }
 
 .dropdown-contentBuyData a {

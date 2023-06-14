@@ -77,20 +77,6 @@ const SideScroll = () => {
                   </div>
                 </Link>
 
-              {/* BUY AIRTIME */}
-                <div className="dropdown mt-3">
-                  <div className="dropdown" onClick={toggleDropdown}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart" viewBox="0 0 16 16">
-                      <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z" />
-                    </svg>
-                    <span className="mx-2 list">Buy Airtime</span>
-                  </div>
-                  <div id="dropdown-content" className="dropdown-content text-center rounded-4">
-                    <a href="#" className="drop-link">MTN</a>
-                    <a href="#" className="drop-link">GLO</a>
-                    <a href="#" className="drop-link">AIRTEL</a>
-                  </div>
-                </div>
 
                 {/* BUY DATA */}
                 <div className="dropdown mt-3">
@@ -109,9 +95,24 @@ const SideScroll = () => {
                     <span className="mx-2 list">Buy Data</span>
                   </div>
                   <div id="dropdown-contentBuyData" className="dropdown-contentBuyData text-center rounded-4">
-                    <a href="#" className="drop-link">MTN</a>
-                    <a href="#" className="drop-link">GLO</a>
-                    <a href="#" className="drop-link">AIRTEL</a>
+                    <Link to="/MTN" className="drop-link nav-link">MTN</Link>
+                    <Link to="#" className="drop-link nav-link">GLO</Link>
+                    <Link to="#" className="drop-link nav-link">AIRTEL</Link>
+                  </div>
+                </div>
+
+              {/* BUY AIRTIME */}
+                <div className="dropdown mt-3">
+                  <div className="dropdown" onClick={toggleDropdown}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart" viewBox="0 0 16 16">
+                      <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z" />
+                    </svg>
+                    <span className="mx-2 list">Buy Airtime</span>
+                  </div>
+                  <div id="dropdown-content" className="dropdown-content text-center rounded-4">
+                    <Link to="#" className="drop-link nav-link">MTN</Link>
+                    <Link to="#" className="drop-link nav-link">GLO</Link>
+                    <Link to="#" className="drop-link nav-link">AIRTEL</Link>
                   </div>
                 </div>
 
