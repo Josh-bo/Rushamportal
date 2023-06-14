@@ -52,7 +52,8 @@ const Dashboard = () => {
                 </div>
 
             </div>
-          {/* Transabtion History */}
+            
+          {/* Transaction History */}
          <TransactionHistory/>
           </div>  
         </div>

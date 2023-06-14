@@ -62,7 +62,7 @@ const Firstcard = () => {
           {/* WHY RUSHAM */}
           <section className='mt-5 pt-5'>
             <div className='text-center'>
-              <div className='fs-1 why w-50 mx-auto'>Why Rusham ?</div>
+              <div className='why w-100 mx-auto'><span className='fs-2'> Why Rusham ?</span></div>
               <div className='to-make'><b>To make transaction more <span className="text-danger">Easier</span> and <span className="text-danger">Faster</span>.</b></div>
             </div>
           </section>

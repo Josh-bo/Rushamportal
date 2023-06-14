@@ -229,3 +229,54 @@
   width: 35px;
   margin-left: 30px !important;
 }
+.container {
+  position: relative;
+}
+
+img#image {
+  position: relative;
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-5px); /* Move to the left */
+  }
+  20% {
+    transform: translateX(5px); /* Move to the right */
+  }
+  30% {
+    transform: translateX(-5px); /* Move to the left */
+  }
+  40% {
+    transform: translateX(5px); /* Move to the right */
+  }
+  50% {
+    transform: translateX(-5px); /* Move to the left */
+  }
+  60% {
+    transform: translateX(5px); /* Move to the right */
+  }
+  70% {
+    transform: translateX(-5px); /* Move to the left */
+  }
+  80% {
+    transform: translateX(5px); /* Move to the right */
+  }
+  90% {
+    transform: translateX(-5px); /* Move to the left */
+  }
+  100% {
+    transform: translateX(0); /* Return to the original position */
+  }
+}
+.tableContainer{
+  overflow-x: auto;
+}

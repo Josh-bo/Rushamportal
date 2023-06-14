@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const TopNav = () => {
   return (
+
     <>
       <div className="sticky-top bg-light rush">
         <div className="text-center">
@@ -14,7 +15,9 @@ const TopNav = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <img className="rus" src={rush} alt="" width={"300px"} />
+              <div className="container">
+                <img className="rus" src={rush} alt="" width={"300px"} id="image" />
+              </div>
             </div>
 
             <ul className="dropdown-menu down text-center w-100 bg-light">
@@ -30,11 +33,11 @@ const TopNav = () => {
                 </Link>
               </li> */}
 
-              <li className="nav-item mt-2">
+              {/* <li className="nav-item mt-2">
                 <Link to="Contact" className="nav-link">
                   Contact
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item mt-2">
                 <Link to="/dash" className="nav-link">
