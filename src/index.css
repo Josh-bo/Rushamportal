@@ -143,7 +143,7 @@
   width: 46px;
 }
 .sme2 {
-  width: 66px;
+  width: 96px;
 }
 .smeCenter {
   background-color: #b1312a !important;
@@ -237,7 +237,7 @@
 img#image {
   position: relative;
   animation-name: shake;
-  animation-duration: 2s;
+  animation-duration: 2 s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 2s;
@@ -280,4 +280,10 @@ img#image {
 }
 .tableContainer{
   overflow-x: auto;
+}
+.AllMtnPlan{
+  overflow-x: auto;
+}
+.all{
+  width: 400rem !important;
 }

@@ -97,7 +97,7 @@ const SideScroll = () => {
                   <div id="dropdown-contentBuyData" className="dropdown-contentBuyData text-center rounded-4">
                     <Link to="/MTN" className="drop-link nav-link">MTN</Link>
                     <Link to="#" className="drop-link nav-link">GLO</Link>
-                    <Link to="#" className="drop-link nav-link">AIRTEL</Link>
+                    <Link to="/AIRTEL" className="drop-link nav-link">AIRTEL</Link>
                   </div>
                 </div>
 

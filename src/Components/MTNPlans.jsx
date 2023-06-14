@@ -13,20 +13,30 @@ const MTNPlans = () => {
 
         {/* PLANS */}
         <div>
-          <div className='container'>
-            <div className='mx-auto text-center p-2'>
-              <button className='but bg-light mx-2'>All</button>
+          <div className='AllMtnPlan'>
+            <div className='row p-2'>
+              <div className='d-flex'>
+                <button className='but bg-light mx-2 all'>All</button>
+                <button className='but bg-light mx-2 all'>SME</button>
+                <button className='but bg-light mx-2 all'>CPT</button>
+              </div>
+            </div>
+
+
+            {/* <div className='mx-auto text-center p-2 d-flex'>
+              <button className='but bg-light mx-2 all'>All</button>
               <button className='but bg-light mx-2 sme'>SME</button>
               <button className='but bg-light mx-2 sme2'>SME 2</button>
               <button className='but bg-light mx-2'>CPT</button>
               <button className='but bg-light mx-2 gifting'>GIFTING</button>
-            </div>
+            </div> */}
           </div>
 
 
 
         {/* Plans GB */}
-          <div className='mx-auto text-center p-3'>
+        <div className='row'>
+          <div className='mx-auto text-center'>
             <button className='btn smeCenter p-2 text-light mt-1'>MTN SME 0.5GB - 30 days - ₦109</button><br />
 
             <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 1.0GB - 30 days - ₦216</button><br />
@@ -39,6 +49,7 @@ const MTNPlans = () => {
 
             <button className='btn smeCenter p-2 text-light mt-3'>MTN SME 10.0GB - 30 days - ₦2160</button>
           </div>
+        </div>
         </div>
       </div>
     </>
