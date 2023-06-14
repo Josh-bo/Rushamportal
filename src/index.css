@@ -284,6 +284,13 @@ img#image {
 .AllMtnPlan{
   overflow-x: auto;
 }
+.AirtelContainer{
+  overflow-x: auto;
+}
 .all{
   width: 400rem !important;
+}
+.back{
+  position: relative;
+  top: -50px;
 }

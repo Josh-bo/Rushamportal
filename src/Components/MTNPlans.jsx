@@ -1,10 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MTNPlans = () => {
   return (
     <>
       <div>
-        <div className='balD text-light p-3 fs-5 mx-auto text-center '>MTN DATA PLAN</div>
+        <div className='balD text-light p-3 fs-5 mx-auto text-center '>
+          MTN DATA PLAN</div>
+
+            <div className='back text-light fs-5 ms-3 mt-1'>
+              <Link to="/" className='nav-link'>
+                  <i class="ri-arrow-left-line"></i>
+              </Link>
+            </div>
 
       <div className='container mt-1'>
         <small>Select Type</small>
