@@ -237,7 +237,7 @@
 img#image {
   position: relative;
   animation-name: shake;
-  animation-duration: 2 s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 2s;
