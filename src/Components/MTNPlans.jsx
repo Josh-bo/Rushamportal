@@ -16,14 +16,14 @@ const MTNPlans = () => {
 
       <div className='container mt-1'>
         <small>Select Type</small>
-        <div className='italic-line w-100'></div>
+        <div className='italic-line mt-1'></div>
       </div>
 
         {/* PLANS */}
         <div>
           <div className='AllMtnPlan'>
             <div className='row p-2'>
-              <div className='d-flex'>
+              <div className='d-flex mb-2 mt-2'>
                 <button className='but bg-light mx-2 all'>All</button>
                 <button className='but bg-light mx-2 all'>SME</button>
                 <button className='but bg-light mx-2 all'>CPT</button>

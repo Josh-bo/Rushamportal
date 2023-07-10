@@ -79,11 +79,11 @@ const HeroSection = () => {
                         <span className='ms-3 ido'>New to Airtime to cash? <span className='link'><a href="" className='text-danger'>see how it works</a></span></span>
                         <div className=' mt-4'>
                           <Link to="/login">
-                            <button className='btn btn-outline-success mx-1'>LOGIN</button>
+                            <button className='btn btn-outline-success mx-1 mt-2'>LOGIN</button>
                           </Link>
 
                           <Link to="/create">
-                            <button className='btn btn-outline-danger mx-1'>Create account</button>
+                            <button className='btn btn-outline-danger mx-1 mt-2'>Create account</button>
                           </Link>
                         </div>
                         </div>

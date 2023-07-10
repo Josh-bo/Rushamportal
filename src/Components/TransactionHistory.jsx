@@ -6,11 +6,11 @@ const TransactionHistory = () => {
       <section className='mt-5 pt-5'>
         <div className='container d-flex'>
           <div className='card-text'>Transaction History</div>
-          <div className='mx-auto text-end bg-info p-1 rounded text-light'>see all</div>
+          <div className='seeAll mx-auto text-end bg-info p-1 rounded text-light'>see all</div>
         </div>
 
         <div className='tableContainer text-center'>
-          <table class="table">
+          <table className="table table-striped">
             <thead>
               <tr>
                 <th scope="col">S/N</th>

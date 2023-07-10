@@ -1,9 +1,8 @@
-import React, { useState, useEffect} from "react";
+<!-- import { useState, useEffect} from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import { useSelector, useDispatch, Provider } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { registerUser, reset } from '../redux/features/auth/authSlice'
 import { store } from '../redux/app/store';
-import { createStore } from 'redux';
 import TopNav from "./TopNav";
 
 
@@ -123,4 +122,4 @@ const Create = () => {
   );
 };
 
-export default App;
+export default App; -->

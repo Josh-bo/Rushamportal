@@ -294,3 +294,18 @@ img#image {
   position: relative;
   top: -50px;
 }
+.codee{
+  position: relative;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+}
+.shift{
+  margin-left: -40px;
+}
+.dColor{
+  background-color: #ab2923 !important;
+}
+.confirmNet{
+  position: relative;
+  top: -7rem;
+}

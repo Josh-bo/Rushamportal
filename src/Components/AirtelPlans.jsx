@@ -16,14 +16,14 @@ const AirtelPlans = () => {
 
       <div className='container mt-1'>
         <small>Select Type</small>
-        <div className='italic-line w-100'></div>
+        <div className='italic-line mt-2'></div>
       </div>
 
         {/* PLANS */}
         <div>
           <div className='AirtelContainer'>
             <div className='row p-2'>
-                <div className='d-flex'>
+                <div className='d-flex mt-2 mb-2'>
                   <button className='but bg-light mx-2 all'>All</button>
                   <button className='but bg-light mx-2 all'>CG</button>
                   <button className='but bg-light mx-2 all'>DG</button>
