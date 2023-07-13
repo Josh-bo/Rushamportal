@@ -1,11 +1,7 @@
 import React from "react";
 import SideScroll from "./SideScroll";
 
-const BuyData = () => {
-    
-    
-    
-    
+const BuyData = () => { 
     const Verify = () => {
        
       };
@@ -96,6 +92,11 @@ const verify = () => {
         display.innerHTML = "Please enter a Phone number"
         nameContainer.innerHTML = ``
         
+        TimeOut()
+    }
+    else if(isNaN(Number(getNumber.value))){
+        display.innerHTML = "Only Number is allowed!, Texts are prohibited"
+
         TimeOut()
     }
     else if(getNumber.value.length != 11){
