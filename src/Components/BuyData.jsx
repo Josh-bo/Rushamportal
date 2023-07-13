@@ -41,14 +41,14 @@ const BuyData = () => {
              </div>
 
                 <div className="mt-3" id="nameContainer">
-                    <div className="confirmNet bg-light shadow-lg rounded-4 p-3">
+                    {/* <div className="confirmNet bg-light shadow-lg rounded-4 p-3">
                         <div className="mb-3;" style={{fontFamily:"monospace"}}>This Phone Number is from <span className="fw-bolder" id="NetId">MTN</span></div>
 
                         <div className="mt-3">
                             <button className="btn btn-danger mx-1">Cancel</button>
                             <button className="btn text-light mx-1" style={{backgroundColor:"#ab2923"}}>OK</button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 
@@ -121,6 +121,12 @@ const verify = () => {
                     
                 `              
             }, 3000);
+
+
+            setTimeout(() => {
+                window.location = "/MTN"
+                // window.location.link
+            }, 5000);
         }
 
         // GLO
@@ -146,13 +152,17 @@ const verify = () => {
         spinnerFunction()
         setTimeout(() => {
                    
-            // nameContainer.innerHTML = `
-            // <div class="bg-danger rounded-2 w-75 mx-auto text-center text-light p-3">
-            // AIRTEL : ${getNumber.value}
-            // </div> 
-            // `
+            nameContainer.innerHTML = `
+            <div class="bg-danger rounded-2 w-75 mx-auto text-center text-light p-3">
+            AIRTEL : ${getNumber.value}
+            </div> 
+            `
 
         }, 3000);
+
+        setTimeout(() => {
+            window.location = "/AIRTEL"
+        }, 5000);
     }
 
     // 9mobile

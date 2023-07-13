@@ -147,7 +147,7 @@
 }
 .smeCenter {
   background-color: #b1312a !important;
-  width: 20rem;
+  width: 17rem !important;
 }
 .side {
   width: 15rem !important;
@@ -307,5 +307,15 @@ img#image {
 }
 .confirmNet{
   position: relative;
-  top: -7rem;
+  top: -5em;
+  animation-name: conNet;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes conNet {
+  0%{
+    position: relative;
+    top: -200px;
+  }
 }
