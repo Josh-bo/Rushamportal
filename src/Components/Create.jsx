@@ -46,7 +46,7 @@ import TopNav from "./TopNav";
           {
                 message ? <div className="alert alert-success text-center">{message}</div> : null
             }
-            <h4 className="fs-3 rounded-3 text-secondary"><i className="text-ligh">REGISTER ACCOUNT</i></h4>
+            <h4 className="fs-3 rounded-3 text-secondary"><i className="">REGISTER ACCOUNT</i></h4>
             <hr />
          {/* {isError && <div className='alert alert-danger'>{message}</div>} */}
             <form>
