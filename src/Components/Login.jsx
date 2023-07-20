@@ -9,7 +9,7 @@ const Login = () => {
       <div className="container mt-5 pt-2">
         <div className="row">
           <div className="col-12 mx-auto text-center w-75 border rounded p-2">
-            <h4 className=""><i>LOGIN</i></h4>
+            <h4 className=""><i className="text-secondary">LOGIN</i></h4>
             <hr />
             <form action="#" method="post">
               <input
