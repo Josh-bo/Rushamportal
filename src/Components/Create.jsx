@@ -1,88 +1,76 @@
-import React, { useState, useEffect} from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import { useSelector, useDispatch, Provider } from 'react-redux';
-import { registerUser, reset } from '../redux/features/auth/authSlice'
-import { store } from '../redux/app/store';
-import { createStore } from 'redux';
 import TopNav from "./TopNav";
 
+    const Create = () => {
+      const [fullName, setfullName] = useState("")
+      const [userName, setuserName] = useState("")
+      const [phoneNumber, setphoneNumber] = useState("")
+      const [password, setpassword] = useState("")
+      const [message, setmessage] = useState("")
+      let navigate = useNavigate()
+  
+      const submitDetails = () => {
+          let details = {
+              fullName: fullName,
+              userName: userName,
+              userPhoneNumber: phoneNumber,
+              password: password
+          }
+          const endpoint = "https://my-vtu-portal-backend.vercel.app/user/student"
+          // console.log(details);
+          axios.post(endpoint,details)
+          .then((response)=>{
+              console.log(response.data);
+              setmessage(response.data.message)
+              if(response.data.status){
+                  setfullName("")
+                  setuserName("")
+                  setphoneNumber("")
+                  setpassword("")
+                  navigate('/login')
+              }
+          })
+          .catch((err)=>{
+              setmessage(err)
+          })
+        }
 
-// const store = createStore(/* your reducer */);
-
-const App = () => (
-  <Provider>
-    <Create/>
-  </Provider>
-);
-
-
-const Create = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-  })
-
-  const { name, email, password } = formData
-
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
-
-  const { isError, isSuccess, message } = useSelector((state) => state.auth)
-
-  useEffect(() => {
-    if (isSuccess) {
-      navigate('/')
-    }
-
-    dispatch(reset())
-  }, [isSuccess, navigate])
-
-  const onChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }))
-  }
-
-  const onSubmit = (e) => {
-    e.preventDefault()
-    const userData = {
-      name,
-      email,
-      phoneNumber,
-      password
-    }
-    dispatch(registerUser(userData))
-  }
-  return (
-    <>
+        return (
+          <>
       <TopNav />
       <div className="container mt-5 pt-2">
         <div className="row">
           <div className="col-12 mx-auto text-center w-75 border rounded p-2">
-            <h4 className="text-info fs-3">CREATE ACCOUNT</h4>
+          {
+                message ? <div className="alert alert-success text-center">{message}</div> : null
+            }
+            <h4 className="text-info fs-3"><i>CREATE ACCOUNT</i></h4>
             <hr />
-         {isError && <div className='alert alert-danger'>{message}</div>}
-            <form onSubmit={onSubmit}>
+         {/* {isError && <div className='alert alert-danger'>{message}</div>} */}
+            <form>
               <input
-                onChange={onChange}
+                // onChange={onChange}
                 type="text"
                 className="form-group form-control mt-3"
                 name="fullName"
                 placeholder="Full-name"
                 id=""
+                onChange={(e) => setfullName(e.target.value)}
+
               />
               <input
-                onChange={onChange}
+                // onChange={onChange}
                 type="text"
                 className="form-group form-control mt-3"
                 name="userName"
                 placeholder="User Name"
                 id=""
+                onChange={(e) => setuserName(e.target.value)}
               />
               <input
-                onChange={onChange}
+                // onChange={onChange}
                 type="text"
                 className="form-group form-control mt-3"
                 name="email"
@@ -90,27 +78,32 @@ const Create = () => {
                 id=""
               />
               <input
-                onChange={onChange}
+                // onChange={onChange}
                 type="text"
                 className="form-group form-control mt-3"
                 name="phoneNumber"
                 placeholder="Phone Number"
                 id=""
+                onChange={(e) => setphoneNumber(e.target.value)}
+
               />
               <input
-                onChange={onChange}
+                // onChange={onChange}
                 type="password"
                 className="form-group form-control mt-3"
                 name="password"
                 placeholder="Password"
                 id=""
+                onChange={(e) => setpassword(e.target.value)}
+
               />
             </form>
             <button
+             onClick={submitDetails}
               className="btn btn-outline-primary w-100 mt-4"
               type="submit"
             >
-              Log In
+              CREATE
             </button>
             <Link to="/login">
               <input type="checkbox" className="mx-2 mt-4" name="" id="" />I
@@ -123,4 +116,4 @@ const Create = () => {
   );
 };
 
-export default App;
+export default Create;
