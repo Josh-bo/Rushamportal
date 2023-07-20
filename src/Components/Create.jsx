@@ -46,7 +46,7 @@ import TopNav from "./TopNav";
           {
                 message ? <div className="alert alert-success text-center">{message}</div> : null
             }
-            <h4 className="text-info fs-3"><i>CREATE ACCOUNT</i></h4>
+            <h4 className="fs-3 rounded-3 text-secondary"><i className="text-ligh">REGISTER ACCOUNT</i></h4>
             <hr />
          {/* {isError && <div className='alert alert-danger'>{message}</div>} */}
             <form>
@@ -100,12 +100,12 @@ import TopNav from "./TopNav";
             </form>
             <button
              onClick={submitDetails}
-              className="btn btn-outline-primary w-100 mt-4"
+              className="btn createBtn text-light w-100 mt-4"
               type="submit"
             >
               CREATE
             </button>
-            <Link to="/login">
+            <Link to="/login" className="text-dark">
               <input type="checkbox" className="mx-2 mt-4" name="" id="" />I
               already have an account
             </Link>
