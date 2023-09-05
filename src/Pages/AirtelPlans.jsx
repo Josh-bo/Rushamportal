@@ -1,5 +1,4 @@
 import React from 'react';
-import SideScroll from './SideScroll';
 import { Link } from 'react-router-dom';
 
 const AirtelPlans = () => {

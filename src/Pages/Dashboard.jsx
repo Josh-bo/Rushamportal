@@ -1,6 +1,6 @@
 import React from 'react';
-import SideScroll from './SideScroll';
-import TransactionHistory from './TransactionHistory';
+import SideScroll from '../Components/SideScroll';
+import TransactionHistory from '../Components/TransactionHistory';
 
 const Dashboard = () => {
   return (

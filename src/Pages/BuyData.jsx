@@ -1,5 +1,5 @@
 import React from "react";
-import SideScroll from "./SideScroll";
+import SideScroll from "../Components/SideScroll";
 
 const BuyData = () => {     
     return (

@@ -1,125 +1,50 @@
-<!-- import { useState, useEffect} from "react";
-import { Link, useNavigate } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { registerUser, reset } from '../redux/features/auth/authSlice'
-import { store } from '../redux/app/store';
-import TopNav from "./TopNav";
+{This code is coming from create.jsx} 
+ 
+  const [fullName, setFullName] = useState("")
+      const [mail, setEmail] = useState("")
+      const [phoneNumber, setPhoneNumber] = useState("")
+      const [password, setPassword] = useState("")
+      const [message, setMessage] = useState("")
+      const [isLoading, setIsLoading] = useState(false); // State to manage loader
+      const [error, setError] = useState(""); // State to manage error message
 
+      let navigate = useNavigate()
+  
+      const submitDetails = () => {
+        setIsLoading(true); // Show loader on submit
+        setError(""); // Reset error message
+        
+        let details = {
+              fullName: fullName,
+              userMail: mail,
+              userPhoneNumber: phoneNumber,
+              userPassword: password
+          }
+          
+          // const endpoint = "https://my-vtu-portal-backend.vercel.app/user/student"
+          const endpoint = "http://localhost:8000/user/postMembers"
+          console.log(details);
 
-// const store = createStore(/* your reducer */);
+          axios.post(endpoint,details)
+          .then((response)=>{
+            setIsLoading(false); // Hide loader
+            setError(""); // Reset error message
 
-const App = () => (
-  <Provider>
-    <Create/>
-  </Provider>
-);
+             console.log(response.data);
+              setMessage(response.data.message)
+              if(response.data.status){
+                  setFullName("")
+                  setUserName("")
+                  setphoneNumber("")
+                  setpassword("")
+                  // navigate('/login')
+              }
+          })
+          .catch((err)=>{
+              setMessage(err)
+               setIsLoading(false); // Hide loader
+        setError("An error occurred. Please try again."); // Set error message
+          })
+        }
 
-
-const Create = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-  })
-
-  const { name, email, password } = formData
-
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
-
-  const { isError, isSuccess, message } = useSelector((state) => state.auth)
-
-  useEffect(() => {
-    if (isSuccess) {
-      navigate('/')
-    }
-
-    dispatch(reset())
-  }, [isSuccess, navigate])
-
-  const onChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }))
-  }
-
-  const onSubmit = (e) => {
-    e.preventDefault()
-    const userData = {
-      name,
-      email,
-      phoneNumber,
-      password
-    }
-    dispatch(registerUser(userData))
-  }
-  return (
-    <>
-      <TopNav />
-      <div className="container mt-5 pt-2">
-        <div className="row">
-          <div className="col-12 mx-auto text-center w-75 border rounded p-2">
-            <h4 className="text-info fs-3">CREATE ACCOUNT</h4>
-            <hr />
-         {isError && <div className='alert alert-danger'>{message}</div>}
-            <form onSubmit={onSubmit}>
-              <input
-                onChange={onChange}
-                type="text"
-                className="form-group form-control mt-3"
-                name="fullName"
-                placeholder="Full-name"
-                id=""
-              />
-              <input
-                onChange={onChange}
-                type="text"
-                className="form-group form-control mt-3"
-                name="userName"
-                placeholder="User Name"
-                id=""
-              />
-              <input
-                onChange={onChange}
-                type="text"
-                className="form-group form-control mt-3"
-                name="email"
-                placeholder="E-mail"
-                id=""
-              />
-              <input
-                onChange={onChange}
-                type="text"
-                className="form-group form-control mt-3"
-                name="phoneNumber"
-                placeholder="Phone Number"
-                id=""
-              />
-              <input
-                onChange={onChange}
-                type="password"
-                className="form-group form-control mt-3"
-                name="password"
-                placeholder="Password"
-                id=""
-              />
-            </form>
-            <button
-              className="btn btn-outline-primary w-100 mt-4"
-              type="submit"
-            >
-              Log In
-            </button>
-            <Link to="/login">
-              <input type="checkbox" className="mx-2 mt-4" name="" id="" />I
-              already have an account
-            </Link>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default App; -->
+{This code end here, coming from create.jsx} 
