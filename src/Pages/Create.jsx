@@ -45,7 +45,15 @@ const Create = () => {
       
       setIsLoading(false);
     }else if(doneEmail != "@gmail.com"){
-      alert("mail invalid");
+      displayError.innerHTML = `Incorrect Mail !`
+      // displayError.style.color = "Red"
+      document.getElementById("displayError").className = "alert alert-danger"
+
+      setTimeout(() => {
+        displayError.innerHTML = ""
+      document.getElementById("displayError").className = ""
+      }, 3000);
+      setIsLoading(false);
     }
     else{
      const findMails = "http://localhost:8000/user/getMembers";
