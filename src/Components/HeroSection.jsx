@@ -15,6 +15,7 @@ const HeroSection = () => {
                         </div>
                     </div>
 
+
                     <div className='col-sm-12 col-md-6 col-lg-6 ps-5'>
                         <div className=''>
                           <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-all text-danger" viewBox="0 0 16 16">

@@ -100,6 +100,7 @@ axios.get(findUser)
             <h4 className=""><i className="text-secondary">LOGIN</i></h4>
             <p id="displayError" className=""></p>
             <hr />
+          
             <form action="#" method="post">
               <input
                 type="text"
@@ -128,6 +129,8 @@ axios.get(findUser)
               don't have an account
             </Link>
           </div>
+
+
         </div>
       </div>
     </>

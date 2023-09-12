@@ -77,7 +77,8 @@ const Create = () => {
           document.getElementById("displayError").className = ""
           }, 3000);
         }else{
-        const endpoint = "http://localhost:8000/user/postMembers";
+          // const endpoint = "http://localhost:8000/user/postMembers";
+        const endpoint = "https://my-vtu-portal-backend.vercel.app/user/postMembers";
           axios
           .post(endpoint, UserDetails)
           .then((response) => {
