@@ -15,8 +15,8 @@ const TopNav = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <div className="container">
-                <img className="rus" src={rush} alt="" width={"300px"} id="image" />
+              <div className="container p-2">
+                <img className="rus" src={rush} alt="" width={"300px"}  height={"80px"} id="image" />
               </div>
             </div>
 
