@@ -16,7 +16,8 @@ const Login = () => {
     let replaceUserMail = userMail.value;
     let replaceUserPassword = userPassword.value;
 
-  const findUser = "http://localhost:8000/user/getMembers";
+  // const findUser = "http://localhost:8000/user/getMembers";
+  const findUser = "https://my-vtu-portal-backend.vercel.app/user/getMembers";
 
 axios.get(findUser)
   .then((response) => {

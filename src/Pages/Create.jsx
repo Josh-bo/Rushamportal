@@ -56,7 +56,9 @@ const Create = () => {
       setIsLoading(false);
     }
     else{
-     const findMails = "http://localhost:8000/user/getMembers";
+    //  const findMails = "http://localhost:8000/user/getMembers";
+     const findMails = "https://my-vtu-portal-backend.vercel.app/user/getMembers";
+     
      axios.get(findMails)
      .then((response) => {
        // Handle the successful response here

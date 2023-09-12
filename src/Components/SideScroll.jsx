@@ -12,6 +12,7 @@ const SideScroll = () => {
 
     if(getAuth == "Login"){
       localStorage.setItem("userAuth", "Logout")
+      localStorage.setItem("usersIndex", "")
       navigate('/login')
     }
 
