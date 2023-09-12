@@ -17,10 +17,12 @@ axios
     const getResult = result.data;
 
     if (Array.isArray(getResult) && index >= 0 && index < getResult.length) {
-      const user = getResult[index];
-      console.log(user);
-      disName.innerHTML = user.fullName;
-      userBalance.innerHTML = user.balance;
+      const userFullName = getResult[index].fullName;
+      const userBalance = getResult[index].balance;
+      // console.log(user);
+      disName.innerHTML = userFullName;
+      displayBalance.innerHTML = Number(userBalance);
+      console.log(userBalance);
       // Display user details here
     } else {
       console.log("Invalid index or data structure.");
@@ -52,7 +54,7 @@ axios
 
                   <div className='col-sm-12 col-md-6 col-lg-3 mx-auto text-center mt-2 shadow-lg'>
                     <div className='card card-text border-0 fs-5 pt-2'>
-                      <div><span>₦</span> <span id='userBalance'></span></div>
+                      <div><span>₦</span> <span id='displayBalance'></span></div>
                       <p className='mt-2'>BALANCE</p>
                     </div>
                   </div>

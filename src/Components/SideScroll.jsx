@@ -1,9 +1,36 @@
 import React from "react";
 import rush from "../assets/rushlogo.png";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const SideScroll = () => {
   let navigate = useNavigate();
+  
+  const getIndexBack = localStorage.getItem("usersIndex");
+  const index = Number(getIndexBack); // Convert the string to a number
+  
+  // const endpoint = "http://localhost:8000/user/getMembers";
+  const endpoint = "https://my-vtu-portal-backend.vercel.app/user/getMembers";
+  
+  axios
+    .get(endpoint)
+    .then((result) => {
+      const getResult = result.data;
+  
+      if (Array.isArray(getResult) && index >= 0 && index < getResult.length) {
+        const userBalance = getResult[index].balance;
+        dispBalance.innerHTML = Number(userBalance);
+        console.log(userBalance);
+        // Display user details here
+      } else {
+        console.log("Invalid index or data structure.");
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  
+
 
   // LOGOUT FUNCTION
   const gout = () => {
@@ -60,7 +87,7 @@ const SideScroll = () => {
               <div className="balD p-2">
                 <div className="mx-auto text-center pt-1 pb-1">
                   <span className="balance">BALANCE</span> <br />
-                  <span>₦ 3,000</span>
+                  <span>₦</span> <span id="dispBalance"></span>
                 </div>
               </div>
             </div>
